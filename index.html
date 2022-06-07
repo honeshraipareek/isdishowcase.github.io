@@ -10,20 +10,58 @@
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="/indexsmallscreen.css">
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-xl  navbar-light">
-        <a class="navbar-brand container" href="#"><img src="/ATLAS-logo.png" style="width: 15%;" alt=""></a>
+  <nav class= "nave pr-3 sticky-top">
+<div id="main">
+  <button class="container-fluid openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div>
+ <img class="" src="https://atlasuniversity.edu.in/wp-content/uploads/2022/02/Logo-1.png" style="width: 10%;">
+  </nav>
+    <!-- <nav class="navbar sticky-top navbar-expand-xl bg-white navbar-light">
+        <a class="navbar-brand container" href="#"><img src="Images/ATLAS-logo.png" style="width: 15%;" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link text-white" href="#">Features</a>
-            <a class="nav-link text-white" href="#">Pricing</a>
-            <a class="nav-link text-white" href="#">Disabled</a>
-          </div>
+            <a class="nav-link active text-black" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-black" href="#">Features</a>
+            <a class="nav-link text-black" href="#">Pricing</a>
+            <a class="nav-link text-black" href="#">Disabled</a>
+          </div> 
         </div>
-      </nav>
+      </nav>-->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul class="nav justify-content-center nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Topic</a>
+          </li>
+          <div class="tab-content">
+            <div class="tab-pane container active" id="home"> 
+              <a href="#">Communication Design</a>
+              <a href="#">Product Design</a>
+              <a href="#">Strategic Design Management</a>
+              <a href="#">Fashion Design</a>
+              <a href="#">Fashion Communication & Styling</a>
+              <a href="#">Fashin Luxury & Lifestyle Design</a>
+              <a href="#">Interior Design</a>
+            </div>
+            <div class="tab-pane container fade" id="menu1">
+              <a href="#">UI/UX</a>
+              <a href="#">Health-Tech</a>
+              <a href="#">Sustainablity</a>
+              <a href="#">Futurism</a>
+              <a href="#">Print-Media</a>
+            </div>
+            
+          </div>
+      
+        
+      </div>
+      
       <div class="container-fluid m-0 p-0 intro">
         <div class="overlay"></div>
         <div class="content p-5">
@@ -31,10 +69,62 @@
           <h3 class="para-content">Showcase 2022 is a range of projects from our graduating students. They have curated their interests, honed skills and tech, utlised their abilities to create a wealth of design possibilities and business opportunities. Overcoming the gloom of the pandemic, respective teams of mentors and mentees have excelled beyond expectations, withstanding odds, isolation and personal strife to present this bouquet of excellence.
 
            <br><br> Each one of our community on behalf of the Atlas Skill Tech University stand together in congratulatory applause for their efforts.</h3>
-          </div>
         </div>
-<!-- 
-      Courrousel starts here -->
+
+        <div class="stats w-75 text-white row">
+          <div class="heading row w-100">
+            <h2>Topics</h2>
+          </div>
+
+        <div class="data-row w-100">
+            <div class=" data container-fluid">
+              <h2>23</h2>
+              <h4>UI/Ux projects</h4>
+            </div>
+
+            <div class="data container-fluid">
+              <h2>8</h2>
+              <h4>Health-Tech</h4>
+            </div>
+
+            <div class="data container-fluid">
+              <h2>17</h2>
+              <h4>Sustainablity</h4>
+            </div>
+
+            <div class=" data container-fluid">
+              <h2>23</h2>
+              <h4>UI/Ux projects</h4>
+            </div>
+
+            <div class="data container-fluid">
+              <h2>8</h2>
+              <h4>Health-Tech</h4>
+            </div>
+
+            <div class="data container-fluid">
+              <h2>17</h2>
+              <h4>Sustainablity</h4>
+            </div>
+
+            <div class=" data container-fluid">
+              <h2>23</h2>
+              <h4>UI/Ux projects</h4>
+            </div>
+
+            <div class="data container-fluid">
+              <h2>8</h2>
+              <h4>Health-Tech</h4>
+            </div>
+
+            <div class="data container-fluid">
+              <h2>17</h2>
+              <h4>Sustainablity</h4>
+            </div>
+        </div>
+
+      </div>
+<!--
 <section class="display-page">      
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -77,13 +167,13 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </button>
-      </div>
+      </div> -->
     </section>
       
 
 
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-  
+      <script src="/index.js"></script>
 </body>
 </html>

@@ -10,6 +10,11 @@
 
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 /* .card{
@@ -88,8 +93,90 @@ body{
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.navbar-light{
-    background-color: rgb(46, 23, 81);
+
+.nave{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(59,46,124);
+    z-index: 2 ;
+
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: rgb(59,46,124);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    margin-top: 30px;
+    padding: 5px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color:rgb(0,198,218);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: -2%;
+    right: 0%;
+    font-size: 40px;
+    margin-left: 50px;
+    color: #fff;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(59,46,124);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(27, 15, 85);
+  }
+  
 
+.stats{
+    z-index: 2;
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    text-align: center;
+    justify-content: center;
+}
+
+.data-row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    object-fit: contain;
+    overflow-x: scroll;
+
+}
+
+.data-row::-webkit-scrollbar{
+    display: none;
+}
