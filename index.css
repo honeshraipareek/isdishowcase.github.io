@@ -45,12 +45,12 @@ body::-webkit-scrollbar{
 {
     display: flex;
     flex-direction: column;
-    height: 400vh;
-    justify-content: space-evenly;
-    /* background-image: url("Images/bg-works.jpg"); */
-    padding-top: 50vh;
-    
+    height: auto;
+    justify-content: center;
+    margin: 200px 0px 200px 0px;
+    /* background-image: url("Images/bg-works.jpg"); */    
 }
+
 
 .overlay{
     position: absolute;
@@ -259,4 +259,18 @@ h2 span{
     bottom: 70%;
     transform: rotate(-90deg);
 
+}
+
+.student-profile{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.student-profile h1{
+    font-size: 3vw;
+}
+
+.student-profile h3{
+    font-size: 2vw;
 }
