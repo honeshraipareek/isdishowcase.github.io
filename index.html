@@ -12,24 +12,11 @@
 <body>
   <nav class= "nave pr-5 pl-5 sticky-top">
 <div id="main">
-  <button class="container-fluid openbtn" onclick="openNav()">☰ ISDI</button>  
+  <button class="container-fluid openbtn" onclick="openNav()"><span class="text-white">☰</span> ISDI</button>  
 </div>
  <img class="" src="https://atlasuniversity.edu.in/wp-content/uploads/2022/02/Logo-1.png" style="width: 10%;">
   </nav>
-    <!-- <nav class="navbar sticky-top navbar-expand-xl bg-white navbar-light">
-        <a class="navbar-brand container" href="#"><img src="Images/ATLAS-logo.png" style="width: 15%;" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active text-black" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link text-black" href="#">Features</a>
-            <a class="nav-link text-black" href="#">Pricing</a>
-            <a class="nav-link text-black" href="#">Disabled</a>
-          </div> 
-        </div>
-      </nav>-->
+  
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <ul class="nav justify-content-center nav-tabs">
@@ -62,7 +49,7 @@
         
       </div>
       
-      <div class="container-fluid m-0 p-0 intro">
+      <div class="container-fluid p-0 intro">
         <div class="overlay"></div>
         <div class="content p-5">
           <h1 class="title">Student Showcase</h1>
@@ -132,61 +119,18 @@ TODO:
 1) Discard Carousel for mobile display
 2)  
 -->
-      <!--
-<section class="display-page">      
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-           <div class="card" style="width: 90vw;">
-            <img src="/photo1.png" class="card-img-top" alt="...">
-              <div class="overlay-black"></div>  
-               <div class="overlay-content">
-                <h1>Wallflowers in the...</h1>
-                <h3>Communication Design</h3>
-               </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 90vw;">
-              <img src="/photo2.png" class="card-img-top" alt="...">
-                <div class="overlay-black"></div>  
-                 <div class="overlay-content">
-                  <h1>Name</h1>
-                  <h3>Communication Design</h3>
-                 </div>
-                </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 90vw;">
-              <img src="/photo1.png" class="card-img-top" alt="...">
-                <div class="overlay-black"></div>  
-                 <div class="overlay-content">
-                  <h1>Name</h1>
-                  <h3>Communication Design</h3>
-                 </div>
-                </div>
-          </div>
-        </div>
-       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
-      </div> -->
+
     </section>
-    <h1>Dean's Choice</h1>
+    <h1 class="dc">Dean's Choice</h1>
 
 
-    <section class="display">
+    <section class="display bg-white">
 
- 
-      <div class="holder container-fluid">
-          
-              <div class="col-4 list w-100">
-                <ul class="nav nav-tabs profile">
+      <h2 class="swipe-more">← Swipe to see more →</h2>
+      <div class="holder container-fluid bg-light">
+        
+              <div class="col-sm-3 list w-100">
+                <ul class="nav nav-tabs    profile">
                   <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#churchika"><img src="ClipPosters/Churchika Gupta - Project Panel copy - Churchika Gupta.jpg" alt=""></a>
                   </li>
@@ -202,22 +146,44 @@ TODO:
                 </ul>
             
               </div>
-        
-          <!-- <div class="col-5">
-            <div class="tab-content content">
-               <div class="tab-pane container active" id="churchika"><img src="Poster Jpegs/Churchika Gupta - Project Panel copy - Churchika Gupta.jpg" alt=""></div>
-              <div class="tab-pane container fade" id="heeram">...</div>
-              <div class="tab-pane container fade" id="saakshishetty">...</div>
-              <div class="tab-pane container fade" id="dhruv">...</div>
-            </div>
-          </div> -->
+      
 
-          <div class="col-5 preview">
+          <div class="col-sm-9 preview">
             <div class="tab-content poster">
-              <div class="tab-pane container active" id="churchika"><img src="Poster Jpegs/Churchika Gupta - Project Panel copy - Churchika Gupta.jpg" alt=""></div>
-              <div class="tab-pane container fade" id="heeram"><img src="Poster Jpegs/HeeramBhojani_Project Panel_FD copy - Heeram Bhojani.jpg" alt=""></div>
-              <div class="tab-pane container fade" id="saakshishetty"><img src="Poster Jpegs/Project Panel_FD saakshi  - Saakshi Shetty.jpg" alt=""></div>
-              <div class="tab-pane container fade" id="dhruv"><img src="Poster Jpegs/Project Panel_FD_Dhruv - Dhruv Sivasankar (1).jpg" alt=""></div>
+              <div class="tab-pane container active" id="churchika">
+                <div class="container-fluid row">
+                  <img class="col-6" src="Poster Jpegs/Churchika Gupta - Project Panel copy - Churchika Gupta.jpg" alt="">
+                  <div class="col-6">
+                    <h1>name</h1>
+                    <h3>Design Principle</h3>
+                    <p>content</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="heeram"> <div class="container-fluid row">
+                <img class="col-6" src="Poster Jpegs/HeeramBhojani_Project Panel_FD copy - Heeram Bhojani.jpg" alt="">
+                <div class="col-6">
+                  <h1>name</h1>
+                  <h3>Design Principle</h3>
+                  <p>content</p>
+                </div>
+              </div></div>
+              <div class="tab-pane container fade" id="saakshishetty"> <div class="container-fluid row">
+                <img class="col-6" src="Poster Jpegs/Project Panel_FD saakshi  - Saakshi Shetty.jpg" alt="">
+                <div class="col-6">
+                  <h1>name</h1>
+                  <h3>Design Principle</h3>
+                  <p>content</p>
+                </div>
+              </div></div>
+              <div class="tab-pane container fade" id="dhruv"> <div class="container-fluid row">
+                <img class="col-6" src="Poster Jpegs/Project Panel_FD_Dhruv - Dhruv Sivasankar (1).jpg" alt="">
+                <div class="col-6">
+                  <h1>name</h1>
+                  <h3>Design Principle</h3>
+                  <p>content</p>
+                </div>
+              </div></div>
             </div>
 
           </div>

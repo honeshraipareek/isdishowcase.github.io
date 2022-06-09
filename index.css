@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: black;
 }
 
 body{
@@ -45,12 +45,10 @@ body::-webkit-scrollbar{
 {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 400vh;
     justify-content: space-evenly;
     /* background-image: url("Images/bg-works.jpg"); */
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: 50vh;
     
 }
 
@@ -66,7 +64,7 @@ body::-webkit-scrollbar{
 .content{
     z-index: 1;
     background: transparent;
-    color: white;
+    
 }
 
 .intro h3{
@@ -86,7 +84,6 @@ body::-webkit-scrollbar{
 .overlay-content{
     display: flex;
     flex-direction: column;
-    color: white;
     z-index: 1;
 }
 .overlay-black{
@@ -131,7 +128,7 @@ body::-webkit-scrollbar{
   }
   
   .sidebar a:hover {
-    color:rgb(0,198,218);
+    color:rgb(0, 123, 137);
   }
   
   .sidebar .closebtn {
@@ -145,11 +142,12 @@ body::-webkit-scrollbar{
   
   .openbtn {
     font-size: 1.5vw;
+    font-weight: 600;
     cursor: pointer;
     background-color: rgb(59,46,124);
-    color: white;
     padding: 10px 15px;
     border: none;
+    color: rgb(206, 0, 79);
   }
   
   .openbtn:hover {
@@ -186,8 +184,9 @@ body::-webkit-scrollbar{
 }
 
 .data-row h2{
-    color: aqua;
+    color: rgb(21, 141, 150);
     font-size: 2.5vw;
+    font-weight: 600;
 }
 
 h2 span{
@@ -212,11 +211,15 @@ h2 span{
     width: 90%;
     justify-self: center;
     align-self: center;
+    position: relative;
 
 }
 
 .holder{
     display: flex;
+    align-items: center;
+
+
 }
 
 .poster div{
@@ -233,4 +236,27 @@ h2 span{
 
 .profile a{
     object-fit: cover;
+}
+
+.list{
+    background-color: rgb(234, 234, 234);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar{
+    display: none;
+}
+
+.dc{
+    font-size: 3vw;
+    margin-left: 50px;
+}
+
+.swipe-more{
+    position: absolute;
+    left: -15%;
+    bottom: 70%;
+    transform: rotate(-90deg);
+
 }

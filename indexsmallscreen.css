@@ -32,3 +32,31 @@
     display: block;
     font-size: 2vw;
 }
+
+/* Cards Section Begins Here*/
+
+.holder{
+    flex-direction: column;
+}
+
+.list{
+    display: flex;
+    height: 220px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+
+.dc{
+    font-size: 3vw;
+    margin-left: 50px;
+}
+
+.swipe-more{
+    transform: rotate(0deg);
+    top: -5%;
+    left: 10%;
+    font-size: 2vw;
+}
+
+
