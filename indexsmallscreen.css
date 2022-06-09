@@ -63,4 +63,11 @@
     display: none;
 }
 
+.ext-link a{
+    font-size: 10px;
+}
 
+.links a{
+    font-size: 4vw;
+    margin-top: 100px;
+}
